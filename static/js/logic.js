@@ -99,4 +99,21 @@ function createMap(earthquakes) {
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
+
+  var legend = L.control({position: 'bottomright'});
+
+  legend.onAdd = function () {
+        var div = L.DomUtil.create('div', 'info legend'),
+          depth = [-10, 10, 30, 50, 70, 90];
+  
+      for (var i = 0; i < depth.length; i++) {
+          div.innerHTML +=
+              '<i style="background:' + mapColor(depth[i] + 1) + '"></i> ' + 
+      + depth[i] + (depth[i + 1] ? ' - ' + depth[i + 1] + '<br>' : ' + ');
+      }
+  
+      return div;
+  };
+  
+  legend.addTo(myMap);
 };
