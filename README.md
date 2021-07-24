@@ -2,7 +2,7 @@
 
 Every day the United States Geological Survey (USGS) collects data on various natural hazards, including Earthquakes. This project utilizes data from USGS and creates easy to understand data visualizations to help better educate the public and other government organizations on issues facing our planet. 
 
-Data was pulled from the USGS GeoJSON feed located at: [USGS GeoJSON] (#http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php). Data for this project was pulled on DATE.
+Data was pulled from the USGS GeoJSON feed located at: [USGS GeoJSON.](#http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) Data for this project was pulled on DATE.
 
 After data was imported, visualizaitons were created using the following criteria: 
  <ul><li> Data markers should reflect the magnitude of the earthquake by their size and and depth of the earth quake by color. Earthquakes with higher magnitudes should appear larger and earthquakes with greater depth should appear darker in color.
